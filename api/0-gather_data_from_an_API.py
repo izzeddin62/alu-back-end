@@ -5,7 +5,6 @@ import json
 import requests
 import sys
 if __name__ == "__main__":
-    print(sys.argv)
     link = "https://jsonplaceholder.typicode.com/users/{}".format(sys.argv[1])
     res = requests.get(link)
     user = json.loads(res.text)
